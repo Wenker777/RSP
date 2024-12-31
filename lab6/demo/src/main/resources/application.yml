@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true  # Включает вывод SQL-запросов в консоль
+        format_sql: true  # Форматирует SQL-запросы для лучшей читаемости
+  logging:
+    level:
+      org.hibernate.SQL: DEBUG  # Логирование SQL-запросов на уровне DEBUG
+      org.hibernate.type.descriptor.sql: TRACE  # Логирование значений параметров запросов на уровне TRACE
